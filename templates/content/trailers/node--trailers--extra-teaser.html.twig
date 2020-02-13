@@ -9,6 +9,9 @@
  * @todo Remove the id attribute (or make it a class), because if that gets
  *   rendered twice on a page this is invalid CSS for example: two lists
  *   in different view modes.
+ * 
+ * This extra-teaser display-setting for the highlighted trailers
+ * hover accent color
  */
 #}
 {%
@@ -30,7 +33,12 @@
       {{ content.field_trailer_img }}
     </div>
     <div class="trailer-model__caption trailer-model__caption--accent">
-      {{ label }}
+      <div class="trailer-model__label">
+        {{ label }}
+      </div>
+      <div class="trailer-model__extra-info">
+        {{ content.field_trailer_extra_info }}
+      </div>
     </div>
   </div>
 

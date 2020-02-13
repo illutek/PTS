@@ -46,6 +46,7 @@
     #{$root}__caption {
       top: 0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
@@ -60,6 +61,23 @@
   &:hover {
     #{$root}__caption--accent {
       background-color: rgba($accent, 1.0);
+    }
+  }
+
+  &:hover {
+    #{$root}__label {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__extra-info {
+    display: none;
+    text-align: center;
+  }
+
+  &:hover {
+    #{$root}__extra-info {
+      display: block;
     }
   }
 

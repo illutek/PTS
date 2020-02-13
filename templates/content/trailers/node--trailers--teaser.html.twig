@@ -9,17 +9,9 @@
  * @todo Remove the id attribute (or make it a class), because if that gets
  *   rendered twice on a page this is invalid CSS for example: two lists
  *   in different view modes.
-
- <a class="node-link" href="#">
-    <div class="trailer-model">
-      <div class="trailer-model__img">
-        <img src="../images/enkele-as.jpg" alt="">
-      </div>
-      <div class="trailer-model__caption">
-        enkele as
-      </div>
-    </div>
-  </a>
+ * 
+ * This teaser display-setting for the trailers
+ * hover gray color
  */
 #}
 {%
@@ -41,7 +33,12 @@
       {{ content.field_trailer_img }}
     </div>
     <div class="trailer-model__caption trailer-model__caption--gray">
-      {{ label }}
+      <div class="trailer-model__label">
+        {{ label }}
+      </div>
+      <div class="trailer-model__extra-info">
+        {{ content.field_trailer_extra_info }}
+      </div>
     </div>
   </div>
 

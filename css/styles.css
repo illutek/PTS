@@ -582,12 +582,20 @@ strong {
   .trailer-model:hover .trailer-model__caption {
     top: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; }
   .trailer-model:hover .trailer-model__caption--gray {
     background-color: #8f9491; }
   .trailer-model:hover .trailer-model__caption--accent {
     background-color: #e8492f; }
+  .trailer-model:hover .trailer-model__label {
+    margin-bottom: 2rem; }
+  .trailer-model__extra-info {
+    display: none;
+    text-align: center; }
+  .trailer-model:hover .trailer-model__extra-info {
+    display: block; }
   @media screen and (min-width: 37.5em) {
     .trailer-model {
       flex-grow: 1;
