@@ -1,0 +1,24 @@
+// ////////////////////////////////////
+// @@ PARAGRAPH-TYPE text-img-left
+// ////////////////////////////////////
+// t-img-l = text-img-left
+// need this to change the order
+
+.para-t-img-l {
+
+    &__wrap {
+        @include para-t-img();
+    }
+
+    &__img-field {
+        order: 2;
+    }
+
+    .para {
+        
+        &__text-field {
+            order: 1;
+        }
+    }
+
+}

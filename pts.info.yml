@@ -1,0 +1,30 @@
+name: pts
+type: theme
+discription: "Aanhangwagenbouw theme voor PTS"
+base theme: classy
+package: Custom
+core: 8.x
+version: 1.0.0
+
+libraries:
+  - pts/globalstyle
+  - pts/fonts
+  - pts/java
+
+regions:
+  contactoverlay: "Contact overlay"
+  mobilemenu: "Mobiel menu"
+  topheaderleft: "Top header left"
+  languageselector: "Language selector"
+  header: Header
+  headermenu: "Header Menu"
+  shortmessage: "Kort bericht"
+  trailers: Trailers
+  content: Content
+  news: News
+  aboutus: "About us"
+  highlighted: Highlighted
+  parts: Onderdelen
+  footerleft: "Footer left"
+  footerright: "Footer right"
+  footermenu: "Footer menu"

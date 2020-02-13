@@ -1,0 +1,46 @@
+// /////////////////////////
+// @@ VARIABLES
+// ////////////////////////
+
+
+// COLORS VARIABLES
+// colors v1
+// $accent: rgb(232, 73, 47);
+// $gray: rgb(109, 110, 112);
+// $dark-gray: rgb(49, 49, 47);
+// $black: rgb(18, 19, 15);
+// $white: rgb(234, 234, 234);
+
+// $clr-parts: $white;
+
+// colors v2
+$accent: rgb(232, 73, 47);
+$gray: rgb(225, 230, 225);
+$dark-gray: rgb(143, 148, 145);
+$black: rgb(10, 16, 13);
+$white: rgb(247, 247, 242);
+
+$clr-parts: $black;
+
+// FONTS VARIABLES
+$ff-sans: 'Raleway', sans-serif;
+$ff-size: 1.6rem;
+$fw-normal: 400;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+// LAYOUT VARIABLES
+$margin-b: 3rem;
+$margin-bb: 6rem;
+
+// OTHER
+$trans-speed: .3s;
+
+// FUNCTION
+@function set-text-color($color) {
+    @if (lightness($color) > 50) {
+      @return $black; // Lighter backgorund, return dark color
+    } @else {
+      @return $white; // Darker background, return light color
+    }
+  }

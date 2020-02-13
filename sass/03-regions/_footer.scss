@@ -1,0 +1,45 @@
+// /////////////////////////
+// @@ Footer
+// ////////////////////////
+
+.footer {
+    background-color: $dark-gray;
+    color: $white;
+    padding: 2rem 0;
+
+    &__inner {
+      @include mq(tablet){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+      }
+      
+    }
+
+    &__left {
+      padding: 2rem 0;
+      margin-bottom: $margin-b;
+      border-bottom: 1px $white solid;
+
+        @include mq(tablet){
+          padding-right: 1rem;
+          border-bottom: none;
+          border-right: 1px solid $white;
+          margin-bottom: 0;
+        }
+      }
+
+    &__right {
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column;
+
+      &-top {
+      }
+
+      &-bottom {
+        position: relative;
+        padding: 2rem 0;
+      }
+    }
+}

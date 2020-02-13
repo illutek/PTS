@@ -1,0 +1,47 @@
+{#
+/**
+ * 2019-11-26
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+
+{# start r-overlay-contact #}
+{% include directory ~ '/templates/partials/shared/contact-overlay.html.twig' %}
+{# end r-overlay-contact #}
+
+{# start r-menu-overlay #}
+{% include directory ~ '/templates/partials/shared/menu-overlay.html.twig' %}
+{# r-menu-overlay #}
+
+{# start region r-top-header #}
+{% include directory ~ '/templates/partials/shared/top-header.html.twig' %}
+{# end region r-top-header #}
+
+<div class="container">
+
+  {# start region r-header #}
+    {% include directory ~ '/templates/partials/shared/header.html.twig' %}
+  {# end region r-header #}
+
+  {# start short message #}
+    {% include directory ~ '/templates/partials/shared/short-message.html.twig' %}
+  {# end short message #}
+  
+  {# start page content #}
+  <div class="page-content">
+    {{ page.content }}
+  </div>
+  {# enhd page content #}
+  
+</div>
+{# end container  #}
+
+{# begin footer #}
+{% include directory ~ '/templates/partials/shared/footer.html.twig' %}
+{# end footer #}
+
+{# begin footer-bottom #}
+{% include directory ~ '/templates/partials/shared/footer-bottom.html.twig' %}
+{# end footer-bottom #}

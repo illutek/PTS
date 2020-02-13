@@ -1,0 +1,16 @@
+// /////////////////////////
+// @@ TRAILERS
+// ////////////////////////
+
+.trailers {
+    margin-bottom: $margin-b;
+    display: flex;
+    flex-direction: column;
+
+    @include mq(tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+

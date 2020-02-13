@@ -1,0 +1,50 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ */
+#}
+{%
+  set classes = [
+    'node',
+    'n-aboutus-full',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+
+  {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  <div{{ content_attributes.addClass('n-aboutus-full__content') }}>
+
+    <div class="n-aboutus-full__img c-image c-image--left">
+      {{ content.field_aboutus_img }}
+    </div>
+    
+    <div class="n-aboutus-full__body">
+      {{ content.body }}
+    </div>
+    
+  </div>
+
+  <div class="para-aboutus">
+    {{ content.field_aboutus_images }}
+  </div>
+
+</article>

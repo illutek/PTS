@@ -1,0 +1,26 @@
+// /////////////////////////
+// @@ LANGUAGE LINKS
+// ////////////////////////
+
+.c-language {
+    &__items {
+        list-style: none;
+        display: flex;
+
+        & .is-active {
+            border-bottom: 1px solid $white;
+            color: $white;
+        }
+    }
+    &__item {
+        margin-left: 0;
+        &:not(:last-child) {
+            padding-right: 1.6rem;
+        }
+    }
+}
+
+.language-link {
+    text-decoration: none;
+    color: $white;
+}

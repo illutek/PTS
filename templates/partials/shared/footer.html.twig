@@ -1,0 +1,36 @@
+{# 
+/**
+* footer
+* footer__left for contactdetails
+* footer__right for opening hours
+*/
+ #}
+
+ <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          {{ page.footerleft }}
+
+          <div class="c-email-protecting">
+          {# not as field in content-type "info" because of extra security, 
+          also does not need to be translated #}
+            <a href="{{ 'eb.stp@ofni:otliam'|reverse }}" >{{ 'eb.stp@ofni'|reverse }}</a>
+          </div>
+
+        </div> <!-- end footer__left -->
+
+        <div class="footer__right">
+          <div class="footer__right-top">
+             {{ page.footerright }}
+          </div>
+          <div class="footer__right-bottom">
+            <a href="https://www.facebook.com/pts.be/">
+              <img class="social-icon social-icon--footer" src="{{ base_path ~ directory }}/dist/images/facebook-icon.png" alt="">
+            </a>
+          </div>
+        </div> <!-- end footer__right -->
+      </div> <!-- end footer__inner -->
+
+    </div> <!-- end container in footer -->
+</footer>

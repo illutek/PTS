@@ -1,0 +1,55 @@
+// /////////////////////////
+// @@ READMORE
+// ////////////////////////
+
+.c-readmore {
+
+    .c-readmore__link {
+        margin-left: 0;
+        // margin-bottom: 3rem;
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+                transition: width .3s;
+            }
+        }
+    }
+
+    &--white {
+
+        .c-readmore__link {
+
+            &::after {
+                @include readmore-link-after ();
+                background: $white;
+            }
+
+            a {
+                color: $white;
+            }
+            
+        }
+    }
+
+    &--black {
+
+        .c-readmore__link {
+
+            &::after {
+                @include readmore-link-after ();
+                background: $black;
+            }
+
+            a {
+                color: $black;
+            }
+        }
+        
+    }
+}

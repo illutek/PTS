@@ -1,0 +1,12 @@
+// ////////////////////////////////////
+// @@ PARAGRAPH-TYPE text-img-right
+// ////////////////////////////////////
+// t-img-r = text-img-right
+
+.para-t-img-r {
+
+    &__wrap {
+        @include para-t-img();
+    }
+
+}

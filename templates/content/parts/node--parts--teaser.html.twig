@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ *
+ * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ */
+#}
+{% set bodytext = content.body|render|striptags %}
+{# Text lenght variable #}
+{% set textlenght = 250 %}
+
+{%
+  set classes = [
+    'node',
+    'n-parts-teaser',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('classy/node') }}
+<article {{ attributes.addClass(classes) }}>
+
+  <h2 class="c-readmore c-readmore--black" {{ title_attributes }}>
+    <div class="c-readmore__link">
+      <a href="{{ url }}">{{ label }}</a>
+    </div>
+  </h2>
+
+  <div{{ content_attributes.addClass('n-parts-teaser__body node__content') }}>
+    <p>
+       {{ bodytext|length > textlenght ? bodytext|slice(0, textlenght) ~ '...' : bodytext }}
+    </p>
+
+  </div>
+
+  <div class="c-readmore c-readmore--black u-list-item-right">
+    {% if bodytext|length > textlenght %}
+      {{ content|without('body') }}
+    {% endif %}
+  </div>
+
+</article>

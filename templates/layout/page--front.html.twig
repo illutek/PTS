@@ -1,0 +1,56 @@
+{#
+/**
+ * 2019-11-26
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+
+{# start r-overlay-contact #}
+{% include directory ~ '/templates/partials/shared/contact-overlay.html.twig' %}
+{# end r-overlay-contact #}
+
+{# start r-menu-overlay #}
+{% include directory ~ '/templates/partials/shared/menu-overlay.html.twig' %}
+{# r-menu-overlay #}
+
+{# start region r-top-header #}
+{% include directory ~ '/templates/partials/shared/top-header.html.twig' %}
+{# end region r-top-header #}
+
+{# start container #}
+<div class="container">
+  {# regions r-header and trailer region #}
+
+    {# start region r-header #}
+    {% include directory ~ '/templates/partials/shared/header.html.twig' %}
+    {# end region r-header #}
+
+    {# start short message #}
+    {% include directory ~ '/templates/partials/shared/short-message.html.twig' %}
+    {# end short message #}
+
+    {# start region trailers #}
+    {% include directory ~ '/templates/partials/front-page/trailers.html.twig' %}
+    {# end region trailers #}
+
+  {# end regions r-header and trailer region #}
+</div>
+{# end container #}
+
+{# start region r-info contains news and aboutus #}
+{% include directory ~ '/templates/partials/front-page/info.html.twig' %}
+{# end region r-info #}
+
+{# start container highlighted and parts #}
+{% include directory ~ '/templates/partials/front-page/highlighted-parts.html.twig' %}
+{# end container highlighted and parts #}
+
+{# begin footer #}
+{% include directory ~ '/templates/partials/shared/footer.html.twig' %}
+{# end footer #}
+
+{# begin footer-bottom #}
+{% include directory ~ '/templates/partials/shared/footer-bottom.html.twig' %}
+{# end footer-bottom #}
