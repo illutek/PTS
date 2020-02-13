@@ -17,12 +17,21 @@
   }
 
   &__logo {
+    text-align: center;
 
     &-img {
       width: 45vw;
       max-width: 19rem;
       height: auto;
     }
+  }
+
+  &__slogan {
+    font: {
+      weight: $fw-semi-bold;
+      size: 2rem;
+    }
+    margin-top: 2rem;
   }
     
   &__menu {

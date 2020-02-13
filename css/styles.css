@@ -202,7 +202,7 @@ strong {
   height: 6rem;
   color: #f7f7f2;
   font-size: 2.4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between; }
@@ -214,10 +214,16 @@ strong {
   @media screen and (min-width: 62.5em) {
     .r-header__contact--mobile {
       display: none; } }
-  .r-header__logo-img {
-    width: 45vw;
-    max-width: 19rem;
-    height: auto; }
+  .r-header__logo {
+    text-align: center; }
+    .r-header__logo-img {
+      width: 45vw;
+      max-width: 19rem;
+      height: auto; }
+  .r-header__slogan {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 2rem; }
   .r-header__menu {
     display: none;
     padding-top: 2rem; }
