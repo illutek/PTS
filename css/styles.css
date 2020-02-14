@@ -223,6 +223,7 @@ strong {
   .r-header__slogan {
     font-weight: 600;
     font-size: 2rem;
+    color: #8f9491;
     margin-top: 2rem; }
   .r-header__menu {
     display: none;

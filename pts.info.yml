@@ -18,6 +18,7 @@ regions:
   languageselector: "Language selector"
   header: Header
   headermenu: "Header Menu"
+  slogan: Slogan
   shortmessage: "Kort bericht"
   trailers: Trailers
   content: Content
