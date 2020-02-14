@@ -457,9 +457,9 @@ strong {
     .c-phone--desktop {
       display: block; } }
 
-.social-icon {
-  width: 3.2rem; }
-  .social-icon--footer {
+.c-social-icon {
+  width: 4.2rem; }
+  .c-social-icon--footer {
     position: absolute;
     right: 0; }
 
