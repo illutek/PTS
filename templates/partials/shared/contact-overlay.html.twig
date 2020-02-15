@@ -13,6 +13,15 @@
       <div class="c-close-btn"></div>
     </div>
 
+    <div class="r-overlay-contact__logo">
+      <a href="{{ path('<front>') }}">
+        <img class="r-overlay-contact__logo-img" src="{{ base_path ~ directory }}/dist/images/logo-white.png" alt="Logo PTS-aanhangwagenbouw">
+      </a>
+      <div class="r-overlay-contact__slogan">
+        {{ page.slogan }}
+      </div>
+    </div>
+
     <div class="r-overlay-contact__body">
       {# block-region content-type info #}
         {{ page.contactoverlay}}
@@ -23,6 +32,12 @@
             <a href="{{ 'eb.stp@ofni:otliam'|reverse }}" >{{ 'eb.stp@ofni'|reverse }}</a>
         </div>
         
+    </div>
+
+    <div class="r-overlay-contact__social">
+      <a href="https://www.facebook.com/pts.be/">
+        <img class="c-social-icon" src="{{ base_path ~ directory }}/dist/images/facebook-icon.png" alt="">
+      </a>
     </div>
 
   </div>

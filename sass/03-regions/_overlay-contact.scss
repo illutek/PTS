@@ -10,22 +10,40 @@
   &__inner {
     display: flex;
     flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
   }
 
   &__close {
-    padding-top: 1rem;
-    padding-left: 2rem;
+    padding-top: 5rem;
     height: 20rem;
   }
 
+  &__logo {
+    width: 60%;
+    margin: 0 auto $margin-bb;
+  }
+
+  &__slogan {
+   text-align: center;
+   padding-top: 2rem;
+  }
+
   &__body {
-    width: 60vw;
+    width: 80%;
     align-self: center;
+    margin-bottom: $margin-bb;
   }
 
   &--visible {
     opacity: 1;
     left: 0;
   }
+
+  &__social {
+    align-self: flex-end;
+    padding-right: 3rem;
+  }
+
 
 }

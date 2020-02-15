@@ -184,17 +184,28 @@ strong {
   transition: all 0.9s; }
   .r-overlay-contact__inner {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto; }
   .r-overlay-contact__close {
-    padding-top: 1rem;
-    padding-left: 2rem;
+    padding-top: 5rem;
     height: 20rem; }
+  .r-overlay-contact__logo {
+    width: 60%;
+    margin: 0 auto 6rem; }
+  .r-overlay-contact__slogan {
+    text-align: center;
+    padding-top: 2rem; }
   .r-overlay-contact__body {
-    width: 60vw;
-    align-self: center; }
+    width: 80%;
+    align-self: center;
+    margin-bottom: 6rem; }
   .r-overlay-contact--visible {
     opacity: 1;
     left: 0; }
+  .r-overlay-contact__social {
+    align-self: flex-end;
+    padding-right: 3rem; }
 
 .r-top-header {
   background-color: #e8492f;
@@ -323,8 +334,8 @@ strong {
     display: flex;
     flex-direction: column; }
     .footer__right-bottom {
-      position: relative;
-      padding: 2rem 0; }
+      padding: 2rem 0;
+      align-self: flex-end; }
 
 .r-footer-bottom {
   padding: 2rem 0;
@@ -459,9 +470,6 @@ strong {
 
 .c-social-icon {
   width: 4.2rem; }
-  .c-social-icon--footer {
-    position: absolute;
-    right: 0; }
 
 .node-link {
   color: #f7f7f2;
