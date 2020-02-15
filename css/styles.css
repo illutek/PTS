@@ -149,6 +149,7 @@ strong {
     .r-menu-overlay__close-btn {
       width: 3rem;
       height: 3rem;
+      margin-top: 6rem;
       cursor: pointer; }
   .r-menu-overlay__list {
     grid-area: list;
