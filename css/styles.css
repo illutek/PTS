@@ -149,7 +149,7 @@ strong {
     .r-menu-overlay__close-btn {
       width: 3rem;
       height: 3rem;
-      margin-top: 6rem;
+      margin-top: 4rem;
       cursor: pointer; }
   .r-menu-overlay__list {
     grid-area: list;
@@ -194,7 +194,7 @@ strong {
     margin: 0 auto; }
   .r-overlay-contact__close {
     padding-top: 5rem;
-    height: 20rem; }
+    height: 15rem; }
   .r-overlay-contact__logo {
     width: 60%;
     margin: 0 auto 6rem; }
