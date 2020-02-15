@@ -24,6 +24,11 @@
     justify-self: end;
     padding-top: 3rem;
     
+    &-btn {
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+    }
   }
 
   &__list {

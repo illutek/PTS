@@ -146,6 +146,10 @@ strong {
     grid-area: btn;
     justify-self: end;
     padding-top: 3rem; }
+    .r-menu-overlay__close-btn {
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer; }
   .r-menu-overlay__list {
     grid-area: list;
     align-self: center;
