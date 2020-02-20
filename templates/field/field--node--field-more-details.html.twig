@@ -2,8 +2,15 @@
 /**
  * @file
  * 
- * at form view is
- * this field is hidden and is filled in with a default value
+ * at form-view on content-type trailers is the more-details field
+ * hidden and is filled in with a (translate) default value.
+ * the more-details image is not shown on the trailers page, only 
+ * succeeds after preprocessing function on the .theme file
+ * 
+ *
+ * expose the base_path variable to all you templates by 
+ * implementing hook_preprocess() in your theme .theme file
+ * https://drupal.stackexchange.com/questions/212669/using-base-path-and-directory-variables-in-twig-template/212671
  */
 #}
 {%
