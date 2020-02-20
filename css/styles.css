@@ -572,6 +572,11 @@ strong {
 .c-email-protecting a:hover {
   text-decoration: none; }
 
+.c-more-details__img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem; }
+
 .n-trailer-full__body {
   margin-bottom: 3rem; }
 
@@ -605,10 +610,12 @@ strong {
     background-color: #e8492f; }
   .trailer-model:hover .trailer-model__label {
     margin-bottom: 2rem; }
-  .trailer-model__extra-info {
+  .trailer-model__extra-info, .trailer-model__moredetails {
     display: none;
     text-align: center; }
   .trailer-model:hover .trailer-model__extra-info {
+    display: block; }
+  .trailer-model:hover .trailer-model__moredetails {
     display: block; }
   @media screen and (min-width: 37.5em) {
     .trailer-model {
@@ -625,6 +632,9 @@ strong {
       background-color: rgba(143, 148, 145, 0.7); }
     .trailer-model__caption--accent {
       background-color: rgba(232, 73, 47, 0.8); }
+  .trailer-model__moredetails-field {
+    margin-top: 2rem;
+    display: flex; }
 
 .para-subtrailer {
   padding: 2rem;

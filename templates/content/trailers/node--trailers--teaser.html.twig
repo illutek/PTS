@@ -11,6 +11,7 @@
  *   in different view modes.
  * 
  * This teaser display-setting for the trailers
+ * 
  * hover gray color
  */
 #}
@@ -33,12 +34,15 @@
       {{ content.field_trailer_img }}
     </div>
     <div class="trailer-model__caption trailer-model__caption--gray">
+
       <div class="trailer-model__label">
         {{ label }}
       </div>
-      <div class="trailer-model__extra-info">
-        {{ content.field_trailer_extra_info }}
-      </div>
+
+      {# start more-details #}
+      {% include directory ~ '/templates/partials/more-details.html.twig' %}
+      {# end more-details #}
+
     </div>
   </div>
 

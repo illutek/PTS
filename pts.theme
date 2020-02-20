@@ -10,3 +10,10 @@
    $variables['site_slogan'] = $config->get('slogan');
 
  }
+
+ /**
+ * Implements hook_preprocess().
+ */
+function pts_preprocess(array &$variables, $hook) {
+  $variables['base_path'] = base_path();
+}

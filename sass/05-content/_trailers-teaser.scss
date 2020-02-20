@@ -70,13 +70,16 @@
     }
   }
 
-  &__extra-info {
+  &__extra-info, &__moredetails {
     display: none;
     text-align: center;
   }
 
   &:hover {
     #{$root}__extra-info {
+      display: block;
+    }
+    #{$root}__moredetails {
       display: block;
     }
   }
@@ -103,5 +106,11 @@
     &--accent {
       background-color: rgba($accent, .8);
     }
+  }
+
+  // field--node--field-more-details.html.twig
+  &__moredetails-field {
+    margin-top: 2rem;
+    display: flex;
   }
 }

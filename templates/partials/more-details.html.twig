@@ -1,0 +1,21 @@
+{# 
+/**
+* 29-11-2019
+* more detail at the trailer- teaser and super-teaser node
+* super-teaser = featured (uitgelicht) (block on home-page)
+* teaser = on the front-page as a block and on the trailers-page
+*/
+#}
+
+{# field_trailer_extra_info and field_more_details is only shown at hover #}
+  <div class="trailer-model__extra-info">
+    {{ content.field_trailer_extra_info }}
+  </div>
+
+{# trailer-model__moredetails is only shown at hover #}
+  <div class="trailer-model__moredetails">
+    {# <div class="trailer-model__moredetails-text"> #}
+      {# more detail picture added to field--node--field-more-details.html.twig #}
+      {{ content.field_more_details }}
+    {# </div> #}
+  </div>
