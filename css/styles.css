@@ -96,12 +96,12 @@ body {
   line-height: 1.5; }
 
 h1, h2, h3, h4 {
-  font-weight: 700;
-  text-transform: uppercase; }
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
 
 h1 {
   font-size: 4rem;
-  line-height: 100%;
   margin-bottom: 3rem; }
   @media screen and (min-width: 62.5em) {
     h1 {
@@ -109,8 +109,7 @@ h1 {
 
 h2 {
   font-size: calc(1.6rem + .9rem);
-  margin-bottom: 3rem;
-  line-height: 3rem; }
+  margin-bottom: 3rem; }
 
 h3 {
   font-size: calc(1.6rem + .4rem);
@@ -232,7 +231,9 @@ strong {
     .r-header__contact--mobile {
       display: none; } }
   .r-header__logo {
-    text-align: center; }
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .r-header__logo-img {
       width: 45vw;
       max-width: 19rem;
