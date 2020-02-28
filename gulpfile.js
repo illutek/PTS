@@ -34,9 +34,10 @@ function scssTask(){
         .pipe(prettyError())
         .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(sass()) // compile SCSS to CSS
+        .pipe(sourcemaps.write()) // write sourcemaps file in css directory
         .pipe(dest('css')) // css no prefix or minify
         .pipe(postcss([ autoprefixer(), cssnano() ])) // PostCSS plugins
-        .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
+        .pipe(sourcemaps.write('.')) // write sourcemaps file in dist directory
         .pipe(lineec()) // line ending corrector
         .pipe(dest(distPath.cssDist) // put final CSS in dist folder
     ); 
