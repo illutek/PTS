@@ -1,24 +1,23 @@
 // /////////////////////////
-// @@ PARAGRAPH VIDEO 
+// @@ PARAGRAPH VIDEO
 // ////////////////////////
 
 .paragraph-video {
-    margin-bottom: $margin-b;
+	margin-bottom: $margin-b;
 
-    &__items {
-        @include mq(tablet) {
-            @include paragraph-items();
-        }
+	&__items {
+		@include mq(tablet) {
+			@include paragraph-items();
+		}
+	}
 
-    }
+	&__item {
+		margin-bottom: $margin-b;
 
-    &__item {
-        margin-bottom: $margin-b;
-
-        @include mq(tablet) {
-            width: 47%;
-            height: auto;
-            margin: 1rem;
-        }
-    }
+		@include mq(tablet) {
+			width: 47%;
+			height: auto;
+			margin: 1rem;
+		}
+	}
 }

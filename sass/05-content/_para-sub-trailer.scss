@@ -1,5 +1,5 @@
 // /////////////////////////////
-// @@ PARAGRAPH SUB-TRAILER 
+// @@ PARAGRAPH SUB-TRAILER
 // /////////////////////////////
 
 // Used in templates
@@ -7,39 +7,38 @@
 // x field--field-para-sub-trailer.html.twig
 // x field--field-para-sub-trailer-img.html.twig
 
-
 .para-subtrailer {
-    padding: 2rem;
-    border: 2px solid $gray;
+	padding: 2rem;
+	border: 2px solid $gray;
 
-    &__images {}
+	&__images {
+	}
 
-    // x field--field-para-sub-trailer.html.twig
-    &__item {
-        &:not(:last-child){
-            margin-bottom: $margin-b;
-        }
-    }
+	// x field--field-para-sub-trailer.html.twig
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: $margin-b;
+		}
+	}
 
-    // x field--field-para-sub-trailer-img.html.twig
-    &__images-items {
-        @include mq(tablet){
-            @include paragraph-items();
-        }
-    }
+	// x field--field-para-sub-trailer-img.html.twig
+	&__images-items {
+		@include mq(tablet) {
+			@include paragraph-items();
+		}
+	}
 
-    &__images-item {
+	&__images-item {
+		&:not(:last-child) {
+			margin-bottom: $margin-b;
+		}
 
-        &:not(:last-child) {
-            margin-bottom: $margin-b;
-        }
-
-        @include mq(tablet) {
-            max-width: 30%;
-            margin: 1rem;
-            &:not(:last-child) {
-                margin-bottom: 0;
-            }
-        }
-    }
+		@include mq(tablet) {
+			max-width: 30%;
+			margin: 1rem;
+			&:not(:last-child) {
+				margin-bottom: 0;
+			}
+		}
+	}
 }

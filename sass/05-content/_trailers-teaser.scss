@@ -1,8 +1,8 @@
 // //////////////////////////////
-// @@ TRAILERS TEASER CONTENT  
+// @@ TRAILERS TEASER CONTENT
 // //////////////////////////////
 
-// The front trailer-teaser block highlighted block 
+// The front trailer-teaser block highlighted block
 // Used templates
 // views-view--trailers-teaser.html.twig
 // views-view--trailers-teaser-page.html.twig
@@ -30,10 +30,9 @@
       width: 31%;
     }
   }
- 
 }
 
-// node--trailer-teaser.html.twig 
+// node--trailer-teaser.html.twig
 // node--trailer--extra-teaser.html.twig
 
 .trailer-model {
@@ -54,13 +53,13 @@
 
   &:hover {
     #{$root}__caption--gray {
-      background-color: rgba($dark-gray, 1.0);
+      background-color: rgba($dark-gray, 1);
     }
   }
-  
+
   &:hover {
     #{$root}__caption--accent {
-      background-color: rgba($accent, 1.0);
+      background-color: rgba($accent, 1);
     }
   }
 
@@ -70,7 +69,8 @@
     }
   }
 
-  &__extra-info, &__moredetails {
+  &__extra-info,
+  &__moredetails {
     display: none;
     text-align: center;
   }
@@ -89,22 +89,23 @@
     max-width: 95%;
   }
 
-  &__img {}
+  &__img {
+  }
 
   &__caption {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 1rem 2rem;      
+    padding: 1rem 2rem;
     transition: all 0.9s;
 
     &--gray {
-      background-color: rgba($dark-gray, .7);
+      background-color: rgba($dark-gray, 0.7);
     }
 
     &--accent {
-      background-color: rgba($accent, .8);
+      background-color: rgba($accent, 0.8);
     }
   }
 
