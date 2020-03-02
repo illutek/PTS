@@ -5,12 +5,13 @@
 // x node--trailers--full.html.twig
 
 .n-trailer-full {
-    &__content {}
+	&__content {
+	}
 
-    &__body {
-        margin-bottom: $margin-b;
-    }
+	&__body {
+		margin-bottom: $margin-b;
+	}
 
-    &__paragraph {}
-
+	&__paragraph {
+	}
 }

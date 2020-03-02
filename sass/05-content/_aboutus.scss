@@ -6,25 +6,22 @@
 // x node--about-us--full.html.twig
 
 .n-aboutus {
+	&-teaser {
+		&__content {
+		}
+	}
 
-    &-teaser {
+	&-full {
+		&__content {
+			@include para-t-img();
+		}
 
-        &__content {}
-    }
+		&__body {
+			order: 0;
+		}
 
-    &-full {
-
-        &__content {
-            @include para-t-img();
-        }
-
-        &__body {
-            order: 0;
-        }
-    
-        &__img {
-            order: 1;
-        }
-
-    }
+		&__img {
+			order: 1;
+		}
+	}
 }

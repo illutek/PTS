@@ -1,19 +1,17 @@
 // //////////////////////////////
-// @@ E-MAIL PROTECTING 
+// @@ E-MAIL PROTECTING
 // //////////////////////////////
 
 .c-email-protecting {
-  a {
+	a {
+		&:link,
+		&:visited,
+		&:active {
+			color: $white;
+		}
 
-    &:link,
-    &:visited,
-    &:active {
-      color: $white;
-    }
-
-    &:hover {
-      text-decoration: none;
-    }
-    
-  }
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }

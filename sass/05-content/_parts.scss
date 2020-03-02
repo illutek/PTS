@@ -6,18 +6,16 @@
 // x node--parts--full.html.twig
 
 .n-parts {
+	&-teaser {
+		color: $clr-parts;
+	}
 
-    &-teaser {
-        color: $clr-parts;
-    }
+	&-full {
+		&__content-wrap {
+			margin-bottom: $margin-b;
+		}
 
-    &-full {
-
-        &__content-wrap {
-            margin-bottom: $margin-b;
-        }
-    
-        &__content {}
-
-    }
+		&__content {
+		}
+	}
 }

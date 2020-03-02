@@ -3,47 +3,43 @@
 // ////////////////////////
 
 .r-info {
-    color: $white;
-    margin-bottom: $margin-b;
-    display: flex;
-    flex-direction: column;
+	color: $white;
+	margin-bottom: $margin-b;
+	display: flex;
+	flex-direction: column;
 
-    @include mq(tablet) {
-        flex-direction: row;
-    }
+	@include mq(tablet) {
+		flex-direction: row;
+	}
 
-  //teaser news
-    &__news {
-        background-color: $accent;
-        padding: 2rem;
+	//teaser news
+	&__news {
+		background-color: $accent;
+		padding: 2rem;
 
-        @include mq(tablet){
-            width: 50vw;
-        }
+		@include mq(tablet) {
+			width: 50vw;
+		}
 
-        &--desktop {
-           
-            @include mq(desktop) {
-                margin-left: 10vw;
-            }
-        }
+		&--desktop {
+			@include mq(desktop) {
+				margin-left: 10vw;
+			}
+		}
+	}
 
-    }
+	&__aboutus {
+		background-color: $dark-gray;
+		padding: 2rem;
 
-    &__aboutus {
-        background-color: $dark-gray;
-        padding: 2rem;
+		@include mq(tablet) {
+			width: 50vw;
+		}
 
-        @include mq(tablet){
-            width: 50vw;
-        }
-
-        &--desktop {
-           
-            @include mq(desktop) {
-                margin-right: 10vw;
-            }
-        }
-
-    }
+		&--desktop {
+			@include mq(desktop) {
+				margin-right: 10vw;
+			}
+		}
+	}
 }

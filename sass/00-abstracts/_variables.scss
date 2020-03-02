@@ -2,7 +2,6 @@
 // @@ VARIABLES
 // ////////////////////////
 
-
 // COLORS VARIABLES
 // colors v1
 // $accent: rgb(232, 73, 47);
@@ -38,9 +37,9 @@ $trans-speed: .3s;
 
 // FUNCTION
 @function set-text-color($color) {
-  @if (lightness($color) > 50) {
-    @return $black; // Lighter backgorund, return dark color
-  } @else {
-    @return $white; // Darker background, return light color
-  }
+	@if (lightness($color) > 50) {
+		@return $black; // Lighter backgorund, return dark color
+	} @else {
+		@return $white; // Darker background, return light color
+	}
 }

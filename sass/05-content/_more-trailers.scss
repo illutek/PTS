@@ -6,23 +6,22 @@
 // node--info--ectra-teaser.html.twig
 
 .n-more-trailers {
-    background-color: $accent;
-    margin-bottom: $margin-b;
-    padding: 1.5rem 0;
-    font: {
-        size: 2rem;
-    };
+	background-color: $accent;
+	margin-bottom: $margin-b;
+	padding: 1.5rem 0;
+	font: {
+		size: 2rem;
+	}
 
-    &__content {
-        text-align: center;
+	&__content {
+		text-align: center;
 
-        a {
-            color: $white;
-            text-decoration: none;
-        }
-        p {
-            margin-bottom: 0;
-        }
-    }
-   
+		a {
+			color: $white;
+			text-decoration: none;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
 }

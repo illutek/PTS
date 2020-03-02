@@ -3,38 +3,35 @@
 // //////////////////////////////
 
 .c-main-menu {
+	&__items {
+		list-style: none;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: nowrap;
+	}
 
-    &__items {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
+	&__item {
+		margin-left: 0;
+		margin-bottom: 2rem;
+		font: {
+			size: 2rem;
+		}
+		&:not(:last-child) {
+			padding-right: 1.5rem;
+		}
 
-    }
+		.is-active {
+			border-bottom: 1px solid $black;
+			color: $black;
+		}
+	}
 
-    &__item {
-        margin-left: 0;
-        margin-bottom: 2rem;
-        font: {
-            size: 2rem;
-        };
-        &:not(:last-child) {
-            padding-right: 1.5rem;
-        }
+	&__link {
+		text-decoration: none;
+		color: $black;
 
-        .is-active {
-            border-bottom: 1px solid $black;
-            color: $black;
-        }
-
-    }
-
-    &__link {
-        text-decoration: none;
-        color: $black;
-
-        &:hover {
-            border-bottom: 1px solid $black;
-        }
-    }
+		&:hover {
+			border-bottom: 1px solid $black;
+		}
+	}
 }

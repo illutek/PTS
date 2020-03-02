@@ -5,12 +5,11 @@
 // x node--short-message--full.html.twig
 
 .n-short-message {
+	background-color: $gray;
+	padding: 4rem;
+	margin-bottom: $margin-b;
 
-    background-color: $gray;
-    padding: 4rem;
-    margin-bottom: $margin-b;
-
-    &__content {
-        color: $black;
-    }
+	&__content {
+		color: $black;
+	}
 }

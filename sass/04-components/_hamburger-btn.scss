@@ -1,45 +1,43 @@
 // //////////////////////////////
-// @@ HAMBURGER BUTTON 
+// @@ HAMBURGER BUTTON
 // //////////////////////////////
 
 .c-hamburger-btn {
-  height: 4rem;
-  width: 4rem;
-  border: 1px solid $dark-gray;
-  text-align: center;
-  transition: all 1.2s;
-  cursor: pointer;
+	height: 4rem;
+	width: 4rem;
+	border: 1px solid $dark-gray;
+	text-align: center;
+	transition: all 1.2s;
+	cursor: pointer;
 
-  &--open {
-    position: relative;
-    top: -7px;
-    transform: translateY(2.5rem);
-    width: 2rem;
+	&--open {
+		position: relative;
+		top: -7px;
+		transform: translateY(2.5rem);
+		width: 2rem;
 
-      &,
-      &::before,
-      &::after {
-        height: 1px;
-        background-color: $dark-gray;
-        display: inline-block;
-        transition: all $trans-speed;
-      }
+		&,
+		&::before,
+		&::after {
+			height: 1px;
+			background-color: $dark-gray;
+			display: inline-block;
+			transition: all $trans-speed;
+		}
 
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-      }
-      &::before {
-        top: -0.6rem;
-        width: 2rem;
-      }
-      &::after {
-        top: 0.6rem;
-        width: 2rem;
-      }
-  }
-
-
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+		}
+		&::before {
+			top: -0.6rem;
+			width: 2rem;
+		}
+		&::after {
+			top: 0.6rem;
+			width: 2rem;
+		}
+	}
 }

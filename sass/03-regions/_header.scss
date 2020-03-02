@@ -3,55 +3,51 @@
 // //////////////////////////////
 
 .r-header {
-  margin-bottom: $margin-bb;
-  display: flex;
-  justify-content: space-between;
+	margin-bottom: $margin-bb;
+	display: flex;
+	justify-content: space-between;
 
-  &__contact {
+	&__contact {
+		&--mobile {
+			@include mq(desktop) {
+				display: none;
+			}
+		}
+	}
 
-    &--mobile {
-      @include mq(desktop) {
-        display: none;
-      }
-    }
-  }
+	&__logo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-  &__logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+		&-img {
+			width: 45vw;
+			max-width: 19rem;
+			height: auto;
+		}
+	}
 
-    &-img {
-      width: 45vw;
-      max-width: 19rem;
-      height: auto;
-    }
-  }
+	&__slogan {
+		font: {
+			weight: $fw-semi-bold;
+			size: 2rem;
+		}
+		color: $dark-gray;
+		margin-top: 2rem;
+	}
 
-  &__slogan {
-    font: {
-      weight: $fw-semi-bold;
-      size: 2rem;
-    }
-    color: $dark-gray;
-    margin-top: 2rem;
-  }
-    
-  &__menu {
-    display: none;
-    padding-top: 2rem;
+	&__menu {
+		display: none;
+		padding-top: 2rem;
 
-    @include mq(desktop) {
-      display: block;
-    }
+		@include mq(desktop) {
+			display: block;
+		}
 
-    &--mobile {
-
-      @include mq(desktop) {
-        display: none;
-      }
-
-    }
-  }
-
+		&--mobile {
+			@include mq(desktop) {
+				display: none;
+			}
+		}
+	}
 }

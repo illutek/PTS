@@ -3,23 +3,16 @@
 // ////////////////////////
 
 .r-top-header {
-    background-color: $accent;
-    padding: 0 1rem;
-    height: 6rem;
-    color: $white;
-    font: {
-        size: 2.4rem;
-    };
-    margin-bottom: $margin-bb;
+	background-color: $accent;
+	padding: 0 1rem;
+	height: 6rem;
+	color: $white;
+	font: {
+		size: 2.4rem;
+	}
+	margin-bottom: $margin-bb;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &__left {
-    }
-
-    &__right {
-
-    }
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }

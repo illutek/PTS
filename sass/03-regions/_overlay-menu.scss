@@ -3,72 +3,68 @@
 // //////////////////////////////
 
 .r-menu-overlay {
-  right: -100vw;
+	right: -100vw;
 
-  @include bcg-overlay();
-  
-  display: grid;
-  grid-template-columns: 5rem 1fr 5rem;
-  grid-template-rows: 1fr 8fr 1fr;
-  grid-template-areas:
-    ". btn ."
-    ". list ."
-    ". social .";
-  
-  @include mq(desktop) {
-    display: none;
-  }
+	@include bcg-overlay();
 
-  &__close {
-    grid-area: btn;
-    justify-self: end;
-    padding-top: 3rem;
-    
-    &-btn {
-      width: 3rem;
-      height: 3rem;
-      margin-top: 4rem;
-      cursor: pointer;
-    }
-  }
+	display: grid;
+	grid-template-columns: 5rem 1fr 5rem;
+	grid-template-rows: 1fr 8fr 1fr;
+	grid-template-areas: ". btn ." ". list ." ". social .";
 
-  &__list {
-    grid-area: list;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
+	@include mq(desktop) {
+		display: none;
+	}
 
-    & .c-main-menu__items {
-      display: flex;
-      flex-direction: column;
-    }
+	&__close {
+		grid-area: btn;
+		justify-self: end;
+		padding-top: 3rem;
 
-    & .c-main-menu__item {
-      margin-left: 0;
-        font: {
-            size: 3rem;
-        };
-        line-height: 6rem;
+		&-btn {
+			width: 3rem;
+			height: 3rem;
+			margin-top: 4rem;
+			cursor: pointer;
+		}
+	}
 
-      &:not(:last-child) {
-        padding-right: 0;
-      }
-    }
+	&__list {
+		grid-area: list;
+		align-self: center;
+		justify-self: center;
+		text-align: center;
 
-    & .c-main-menu__link {
-      line-height: 4rem;
-      color: $white;
-    }
-  }
+		& .c-main-menu__items {
+			display: flex;
+			flex-direction: column;
+		}
 
-  &__social {
-    grid-area: social;
-    justify-self: end;
+		& .c-main-menu__item {
+			margin-left: 0;
+			font: {
+				size: 3rem;
+			}
+			line-height: 6rem;
 
-  }
+			&:not(:last-child) {
+				padding-right: 0;
+			}
+		}
 
-  &--visible {
-    opacity: 1;
-    right: 0;
-  }
+		& .c-main-menu__link {
+			line-height: 4rem;
+			color: $white;
+		}
+	}
+
+	&__social {
+		grid-area: social;
+		justify-self: end;
+	}
+
+	&--visible {
+		opacity: 1;
+		right: 0;
+	}
 }
