@@ -12,8 +12,8 @@ const sourcemaps = require('gulp-sourcemaps'),
 	cssnano = require('cssnano'),
 	lineec = require('gulp-line-ending-corrector'),
 	imagemin = require('gulp-imagemin'),
-    changed = require('gulp-changed'),
-    livereload = require('gulp-livereload'),
+	changed = require('gulp-changed'),
+	livereload = require('gulp-livereload'),
 	prettyError = require('gulp-prettyerror');
 
 // File paths
@@ -42,8 +42,8 @@ function scssTask() {
 		.pipe(lineec()) // line ending corrector
 		.pipe(
 			dest(distPath.cssDist) // put final CSS in dist folder
-        )
-        .pipe(livereload());
+		)
+		.pipe(livereload());
 }
 
 // JS Task
@@ -74,7 +74,7 @@ function imgTask() {
 
 // Watch task
 function watchTask() {
-    livereload.listen();
+	livereload.listen();
 	watch([ files.scssPath, files.jsPath, files.imgPath ], parallel(scssTask, jsTask, imgTask));
 }
 
