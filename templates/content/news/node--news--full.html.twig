@@ -32,9 +32,11 @@
   {% endif %}
   {{ title_suffix }}
 
-  <div class="c-image c-image--left">
-    {{ content.field_news_img }}
-  </div>
+ 	{% if not node.field_news_img.isempty %}
+		<div class="r-info__img c-image c-image--left">
+			{{ content.field_news_img }}
+		</div>
+	{% endif %}
 
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content.body }}

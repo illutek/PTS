@@ -28,28 +28,30 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
+<article{{attributes.addClass(classes)}}>
 
-  <h2 class="c-readmore c-readmore--white" {{ title_attributes }}>
-    <div class="c-readmore__link">
-      <a href="{{ url }}">{{ label }}</a>
-    </div>
-  </h2>
+	<h2 class="c-readmore c-readmore--white" {{ title_attributes }}>
+		<div class="c-readmore__link">
+			<a href="{{ url }}">{{ label }}</a>
+		</div>
+	</h2>
 
-  <div class="r-info__img c-image c-image--left">
-    {{ content.field_news_img }}
-  </div>
+	{% if not node.field_news_img.isempty %}
+		<div class="r-info__img c-image c-image--left">
+			{{ content.field_news_img }}
+		</div>
+	{% endif %}
 
-  <div{{ content_attributes.addClass('node__content') }}>
-     <p>
-       {{ bodytext|length > textlenght ? bodytext|slice(0, textlenght) ~ '...' : bodytext }}
-     </p>
-  </div>
+	<div{{content_attributes.addClass('node__content')}}>
+		<p>
+			{{ bodytext|length > textlenght ? bodytext|slice(0, textlenght) ~ '...' : bodytext }}
+		</p>
+	</div>
 
-  <div class="c-readmore c-readmore--white u-list-item-right">
-    {% if bodytext|length > textlenght %}
-      {{ content|without('body')|without('field_news_img') }}
-    {% endif %}
-  </div>
+	<div class="c-readmore c-readmore--white u-list-item-right">
+		{% if bodytext|length > textlenght %}
+			{{ content|without('body')|without('field_news_img') }}
+		{% endif %}
+	</div>
 
 </article>
