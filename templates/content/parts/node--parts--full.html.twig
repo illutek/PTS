@@ -23,30 +23,33 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
+<article{{attributes.addClass(classes)}}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+	{{ title_prefix }}
+	{% if label and not page %}
+		<h2{{title_attributes}}>
+			<a href="{{ url }}" rel="bookmark">{{ label }}</a>
+		</h2>
+	{% endif %}
+	{{ title_suffix }}
 
-  <div class="n-parts-full__content-wrap">
+	<div
+		class="n-parts-full__content-wrap">
 
-  {# class image-left to a component #}
-    <div class="c-image c-image--left">
-        {{ content.field_parts_img }}
-    </div>
-  
-    <div{{ content_attributes.addClass('node-parts-full__content') }}>
-        {{ content.body }}
-    </div>
+		{# class image-left to a component #}
+		{% if not node.field_parts_img.isempty %}
+			<div class="c-image c-image--left">
+				{{ content.field_parts_img }}
+			</div>
+		{% endif %}
 
-  </div>
-  
+		<div{{content_attributes.addClass('node-parts-full__content')}}>
+			{{ content.body }}
+		</div>
 
-  {{ content.field_para_parts }}
+	</div>
+
+
+	{{ content.field_para_parts }}
 
 </article>
