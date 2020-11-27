@@ -23,22 +23,24 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
+<article{{attributes.addClass(classes)}}>
 
-    <h2{{ title_attributes }}>
-      {{ label }}
-    </h2>
+	<h2{{title_attributes}}>
+		{{ label }}
+	</h2>
 
-    <div class="n-secondhand__inner">
+	<div class="n-secondhand__inner">
 
-        <div{{ content_attributes.addClass('n-secondhand__body') }}>
-            {{ content.body }}
-        </div>
+		<div{{content_attributes.addClass('n-secondhand__body')}}>
+			{{ content.body }}
+		</div>
 
-        <div class="n-secondhand__images">
-            {{ content.field_secondhand_img	 }}
-        </div>
-    
-    </div>
+		{% if not node.field_secondhand_img.isempty %}
+			<div class="n-secondhand__images">
+				{{ content.field_secondhand_img	 }}
+			</div>
+		{% endif %}
+
+	</div>
 
 </article>
