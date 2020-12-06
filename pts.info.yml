@@ -28,4 +28,6 @@ regions:
   parts: Onderdelen
   footerleft: "Footer left"
   footerright: "Footer right"
+  # Footer menu is not used in this theme
   footermenu: "Footer menu"
+  maindistributor: "Main Distributor"

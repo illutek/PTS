@@ -1,0 +1,32 @@
+// /////////////////////////
+// @@ MAIN DISTRIBUTOR
+// ////////////////////////
+
+// views-view--maindistributor.html.twig
+// views-view-unformatted--maindistributor.html.twig
+
+.maindistributor {
+	&__views-row {
+		text-align: center;
+		width: 10rem;
+
+		@include mq(tablet) {
+			width: 20rem;
+		}
+	}
+
+	&__view-content {
+		display: flex;
+		gap: 2rem;	
+		flex-wrap: wrap;	
+		justify-content: center;
+		align-items: center;
+		
+	}
+}
+
+.footer {
+	&__main-distributor {
+    margin-bottom: $margin-bb;
+	}
+}

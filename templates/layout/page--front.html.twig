@@ -35,15 +35,16 @@
 </div>
 {# end container #}
 
-{# start region r-info contains news and aboutus #}
-{% include directory ~ '/templates/partials/front-page/info.html.twig' %}
-{# end region r-info #}
-
 <div class="container">
   {# start region trailers #}
   {% include directory ~ '/templates/partials/front-page/trailers.html.twig' %}
   {# end region trailers #}
 </div>
+
+{# start region r-info contains news and aboutus #}
+{% include directory ~ '/templates/partials/front-page/info.html.twig' %}
+{# end region r-info #}
+
 
 {# start container highlighted and parts #}
 {% include directory ~ '/templates/partials/front-page/highlighted-parts.html.twig' %}

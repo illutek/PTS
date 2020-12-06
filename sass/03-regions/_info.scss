@@ -4,7 +4,7 @@
 
 .r-info {
 	color: $white;
-	margin-bottom: $margin-b;
+	margin-bottom: $margin-bb;
 	display: flex;
 	flex-direction: column;
 
@@ -13,8 +13,9 @@
 	}
 
 	//teaser news
-	&__news {
-		background-color: $accent;
+	&__aboutus {
+	// &__news {
+		background-color: $dark-gray;
 		padding: 2rem;
 
 		@include mq(tablet) {
@@ -28,8 +29,9 @@
 		}
 	}
 
-	&__aboutus {
-		background-color: $dark-gray;
+	&__news {
+	// &__aboutus {
+		background-color: $accent;
 		padding: 2rem;
 
 		@include mq(tablet) {

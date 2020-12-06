@@ -5,7 +5,7 @@
 // region on frontpage = wrapper for highlighted and parts
 
 .r-highlghted-parts {
-	margin-bottom: $margin-b;
+	margin-bottom: $margin-bb;
 
 	@include mq(tablet) {
 		display: grid;
